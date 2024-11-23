@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Navbar</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .top-bar {
+      background-color: #0056A5;
+      color: white;
+      font-size: 14px;
+      padding: 5px 0;
+    }
+    .top-bar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+    .navbar {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .search-input {
+      border-radius: 20px;
+      padding: 5px 10px;
+    }
+    .hero-section img {
+            width: 100%;
+            height: auto;
+        }
+        .contact-form {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .grade-level img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .feature-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 40px;
+            margin: 0 auto 15px auto;
+        }
+
+        .feature-number {
+            font-size: 24px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        .staff-card img {
+            border-radius: 50%;
+        }
+
+        .social-icons a {
+            color: #007bff;
+            font-size: 20px;
+            margin: 0 5px;
+        }
+
+        .social-icons a:hover {
+            color: #0056b3;
+        }
+        .event-date {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        .event-date h4 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .event-date small {
+            font-size: 12px;
+        }
+
+        .toppers img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .footer {
+            background-image: url('pc13.jpg');
+            background-size: cover;
+            color: #fff;
+            padding: 40px 20px;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .newsletter input {
+            max-width: 300px;
+            margin-right: 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 5px;
+            font-size: 20px;
+        }
+
+        .social-icons a:hover {
+            color: #ccc;
+        }
+  </style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar text-center text-md-start px-3 px-md-5 d-flex justify-content-between">
+  <div>
+    <span><i class="bi bi-telephone"></i> 0987456321</span>
+    <span><i class="bi bi-envelope"></i> info@schoolname.com</span>
+  </div>
+  <div>
+    <a href="#">High School</a> | 
+    <a href="#">Middle School</a> | 
+    <a href="#">Entrance Exams</a> | 
+    <a href="#">Help!</a>
+  </div>
+</div>
+
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-lg bg-white py-3">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="https://via.placeholder.com/150x50" alt="Logo Here" width="150">
+    </a>
+
+    <!-- Search Bar -->
+    <form class="d-flex align-items-center ms-auto me-4">
+      <input type="search" class="form-control search-input" placeholder="Search...">
+      <button class="btn btn-outline-primary ms-2" type="submit">
+        <i class="bi bi-search"></i>
+      </button>
+    </form>
+
+    <!-- Login/Signup Links -->
+    <div>
+      <a href="#" class="text-dark me-3">Log in</a> /
+      <a href="#" class="text-dark ms-1">Sign up</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Sub Navigation -->
+<div class="bg-light">
+  <div class="container">
+    <ul class="nav justify-content-center py-2">
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#">About Us</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Subjects</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Our Partners</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Team</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Schools</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Entrance Exams</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+ <!-- Hero Section -->
+ <div class="hero-section">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="pc 1.jpg" class="d-block w-100" alt="Classroom">
+            </div>
+            <div class="carousel-item">
+                <img src="pc2.jpg" class="d-block w-100" alt="Students">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- Contact Form -->
+<div class="container mt-5">
+    <div class="row justify-content-end">
+        <div class="col-md-4">
+            <div class="contact-form">
+                <h5>Get In Touch!</h5>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email Address">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Subject">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Now!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Content Section -->
+<div class="container mt-5 text-center">
+    <h2>It is a Long Established Fact</h2>
+    <p class="mt-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+    <button class="btn btn-primary">Read More</button>
+    <div class="row mt-4 align-items-center">
+        <div class="col-md-6">
+            <img src="pc3.jpg" class="img-fluid rounded" alt="School">
+        </div>
+        <div class="col-md-6">
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- Grade Level Section -->
+<div class="container mt-5">
+    <h3 class="text-center">By Grade Level</h3>
+    <div class="row mt-4 grade-level">
+        <div class="col-md-4">
+            <img src="pc4.jpg" alt="Elementary School">
+            <h5 class="mt-2 text-center">Elementary School</h5>
+        </div>
+        <div class="col-md-4">
+            <img src="pc5.jpg" alt="Middle School">
+            <h5 class="mt-2 text-center">Middle School</h5>
+        </div>
+        <div class="col-md-4">
+            <img src="pc6.jpg" alt="High School">
+            <h5 class="mt-2 text-center">High School</h5>
+        </div>
+    </div>
+</div>
+<!-- Features Section -->
+<div class="container text-center my-5">
+  <h2>Lorem Ipsum</h2>
+  <div class="row mt-4">
+      <div class="col-md-3">
+          <div class="feature-icon">
+              <i class="bi bi-lightbulb"></i>
+          </div>
+          <h5>Smart Courses</h5>
+          <p>It is a long established fact that a reader will be distracted by the readable content...</p>
+          <a href="#" class="btn btn-link">Read More</a>
+      </div>
+      <div class="col-md-3">
+          <div class="feature-icon">
+              <i class="bi bi-person"></i>
+          </div>
+          <h5>Expert Teachers</h5>
+          <p>It is a long established fact that a reader will be distracted by the readable content...</p>
+          <a href="#" class="btn btn-link">Read More</a>
+      </div>
+      <div class="col-md-3">
+          <div class="feature-icon">
+              <i class="bi bi-music-note"></i>
+          </div>
+          <h5>Music and Arts</h5>
+          <p>It is a long established fact that a reader will be distracted by the readable content...</p>
+          <a href="#" class="btn btn-link">Read More</a>
+      </div>
+      <div class="col-md-3">
+          <div class="feature-icon">
+              <i class="bi bi-chat"></i>
+          </div>
+          <h5>Active Learning</h5>
+          <p>It is a long established fact that a reader will be distracted by the readable content...</p>
+          <a href="#" class="btn btn-link">Read More</a>
+      </div>
+  </div>
+</div>
+
+<!-- Numbered Features Section -->
+<div class="container text-center my-5">
+  <h2>Lorem Ipsum</h2>
+  <div class="row mt-4">
+      <div class="col-md-4">
+          <div class="feature-number">1</div>
+          <h5>Experience Teachers</h5>
+          <p>It is a long established fact that a reader will be distracted by the readable content...</p>
+          <a href="#" class="btn btn-link">Read More</a>
+      </div>
+      <div class="col-md-4">
+          <div class="feature-number">2</div>
+          <h5>Delicious Food</h5>
+          <p>It is a long established fact that a reader will be distracted by the readable content...</p>
+          <a href="#" class="btn btn-link">Read More</a>
+      </div>
+      <div class="col-md-4">
+          <div class="feature-number">3</div>
+          <h5>Physical Activity</h5>
+          <p>It is a long established fact that a reader will be distracted by the readable content...</p>
+          <a href="#" class="btn btn-link">Read More</a>
+      </div>
+  </div>
+  <div class="row mt-4">
+      <div class="col-md-4">
+          <div class="feature-number">4</div>
+          <h5>Transportation</h5>
+          <p>It is a long established fact that a reader will be distracted by the readable content...</p>
+          <a href="#" class="btn btn-link">Read More</a>
+      </div>
+      <div class="col-md-4">
+          <div class="feature-number">5</div>
+          <h5>Love and Care</h5>
+          <p>It is a long established fact that a reader will be distracted by the readable content...</p>
+          <a href="#" class="btn btn-link">Read More</a>
+      </div>
+      <div class="col-md-4">
+          <div class="feature-number">6</div>
+          <h5>Sports</h5>
+          <p>It is a long established fact that a reader will be distracted by the readable content...</p>
+          <a href="#" class="btn btn-link">Read More</a>
+      </div>
+  </div>
+</div>
+
+<!-- Staff Section -->
+<div class="container text-center my-5">
+  <h2>Our Staffs</h2>
+  <div class="row mt-4">
+      <div class="col-md-3">
+          <div class="card staff-card p-3">
+              <img src="pc10.jpg" alt="Teacher" class="img-fluid mx-auto">
+              <h5 class="mt-3">Teacher</h5>
+              <p>It is a long established fact that a reader will be distracted by the readable content...</p>
+              <div class="social-icons">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card staff-card p-3">
+              <img src="pc 7.jpg" alt="Teacher" class="img-fluid mx-auto">
+              <h5 class="mt-3">Teacher</h5>
+              <p>It is a long established fact that a reader will be distracted by the readable content...</p>
+              <div class="social-icons">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card staff-card p-3">
+              <img src="pc8.jpg" alt="Teacher" class="img-fluid mx-auto">
+              <h5 class="mt-3">Teacher</h5>
+              <p>It is a long established fact that a reader will be distracted by the readable content...</p>
+              <div class="social-icons">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card staff-card p-3">
+              <img src="pc9.jpg" alt="Teacher" class="img-fluid mx-auto">
+              <h5 class="mt-3">Teacher</h5>
+              <p>It is a long established fact that a reader will be distracted by the readable content...</p>
+              <div class="social-icons">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Upcoming Events Section -->
+<div class="container my-5">
+  <h2 class="text-center">Upcoming Events</h2>
+  <div class="row mt-4">
+      <div class="col-md-6">
+          <div class="d-flex">
+              <div class="event-date">
+                  <h4>18</h4>
+                  <small>July 2017</small>
+              </div>
+              <div>
+                  <img src="pc11.jpg" alt="Event Image" class="img-fluid mb-3">
+                  <h5>Lorem Ipsum is simply dummy</h5>
+                  <p>It is a long established fact that a reader will be distracted by the readable content...</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="d-flex">
+              <div class="event-date">
+                  <h4>04</h4>
+                  <small>Oct 2017</small>
+              </div>
+              <div>
+                  <img src="pc12.jpg" alt="Event Image" class="img-fluid mb-3">
+                  <h5>Lorem Ipsum is simply dummy</h5>
+                  <p>It is a long established fact that a reader will be distracted by the readable content...</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Toppers Section -->
+<div class="container my-5 text-center">
+  <h2>Toppers 2016-2017</h2>
+  <div class="row mt-4 toppers">
+      <div class="col-md-3">
+          <img src="pc 7.jpg" alt="Topper" class="img-fluid">
+          <h5 class="mt-3">Student Name</h5>
+          <p>Class-10 | Marks-96%</p>
+      </div>
+      <div class="col-md-3">
+          <img src="pc8.jpg" alt="Topper" class="img-fluid">
+          <h5 class="mt-3">Student Name</h5>
+          <p>Class-10 | Marks-96%</p>
+      </div>
+      <div class="col-md-3">
+          <img src="pc10.jpg" alt="Topper" class="img-fluid">
+          <h5 class="mt-3">Student Name</h5>
+          <p>Class-10 | Marks-96%</p>
+      </div>
+      <div class="col-md-3">
+          <img src="pc9.jpg" alt="Topper" class="img-fluid">
+          <h5 class="mt-3">Student Name</h5>
+          <p>Class-10 | Marks-96%</p>
+      </div>
+  </div>
+</div>
+
+<!-- Footer Section -->
+<div class="footer">
+  <div class="container">
+      <div class="row">
+          <!-- Quick Links -->
+          <div class="col-md-3">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Subjects</a></li>
+                  <li><a href="#">Our Partners</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              </ul>
+          </div>
+          <!-- Contact Info -->
+          <div class="col-md-3">
+              <h5>Contact Info</h5>
+              <p><i class="bi bi-telephone"></i> 0987654321</p>
+              <p><i class="bi bi-envelope"></i> info@schoolname.com</p>
+              <p><i class="bi bi-geo-alt"></i> 64/70, Lorem Ipsum, 1234, dolor</p>
+          </div>
+          <!-- Newsletter -->
+          <div class="col-md-3">
+              <h5>Newsletter</h5>
+              <form class="d-flex newsletter">
+                  <input type="email" class="form-control" placeholder="Enter your email">
+                  <button class="btn btn-primary">Subscribe</button>
+              </form>
+          </div>
+          <!-- Social Links -->
+          <div class="col-md-3">
+              <h5>Find Us On</h5>
+              <div class="social-icons">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="text-center mt-3">
+          <p>Copyright © 2017 companyname.com. All Rights Reserved.</p>
+      </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
